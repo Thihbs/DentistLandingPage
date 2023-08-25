@@ -54,18 +54,12 @@ export class LocationComponent implements OnInit {
         lat:  -23.5964366,
         lng:  -46.8518606,
       },
-      label: {
-        color: 'red',
-      },
       title: 'Clinica Thais Yamamoto ' + (this.markers.length + 1),
       info: this.infoContent,
       options: {
         animation: google.maps.Animation.BOUNCE,
       },
     });
-
-    const latestMarker = this.markers[this.markers.length - 1];
-    this.openInfo(latestMarker, latestMarker.info);
   }
 
   openInfo(marker: MapMarker, content: string) {

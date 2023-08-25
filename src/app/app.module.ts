@@ -1,4 +1,6 @@
 import {  NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'; // Certifique-se de importar FormsModule
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,7 +11,8 @@ import { CardEspecialidadesComponent } from './especialidades/card-especialidade
 import { SobreComponent } from './sobre/sobre.component';
 import { LocationComponent } from './location/location.component';
 import { GoogleMapsModule } from '@angular/google-maps';
-import { ButtonComponentComponent } from './button-component/button-component.component'
+import { ButtonComponentComponent } from './button-component/button-component.component';
+import { CadastroModalComponent } from './cadastro-modal/cadastro-modal.component'
 
 
 @NgModule({
@@ -21,12 +24,15 @@ import { ButtonComponentComponent } from './button-component/button-component.co
     CardEspecialidadesComponent,
     SobreComponent,
     LocationComponent,
-    ButtonComponentComponent
+    ButtonComponentComponent,
+    CadastroModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

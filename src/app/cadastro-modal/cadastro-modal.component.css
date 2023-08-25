@@ -1,0 +1,124 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  color: #676166;
+}
+
+.modal-content {
+  position: relative;
+  width: 30%;
+  height: 75%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Ajuste o estilo do botão de fechar */
+.close-button:hover {
+  background-color: #aaa;
+}
+
+.input-group{
+  display:grid;
+  margin-top: 2rem;
+  grid-template-areas: "a";
+}
+.input-box{
+  template-area: a;
+  margin-bottom: 1.1rem;
+}
+
+.input-box input{
+  width: 90%;
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border:none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input::hover{
+  background-color: #eeeeee75;
+}
+
+
+.form-group{
+  display: grid;
+  justify-items: center;
+}
+
+.form-group textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.form-group textarea {
+  resize: vertical; /* Permite ajustar verticalmente */
+  min-height: 100px; /* Altura mínima */
+}
+
+.form-groups input[type="date"] {
+  display:flex;
+  margin-top: 2vh;
+  /* Estilos específicos para o campo de data */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: white;
+}
+.form-groups  label{
+  margin-top: 2vh;
+}
+.form-groups{
+  display: grid;
+  margin-left: 3vh;
+  justify-items: start;
+}
+
+.form-buttom{
+  display: flex;
+  width:100%;
+  height:100%;
+  margin-top: 2vh;
+  justify-content: center;
+}
+
+
+.form-buttom button{
+  margin-top: 8vh;
+  width: 70%;
+  height: 5vh;
+  background-color: #676166;
+  color: white;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.form-buttom button:hover{
+  background-color: #D8B1B2;
+  color:black;
+}
