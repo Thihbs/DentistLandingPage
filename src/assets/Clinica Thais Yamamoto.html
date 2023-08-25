@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:4200/ -->
+<html lang="en"><script>
+Object.defineProperty(window, 'ysmm', {
+	set: function(val) {
+		var T3 = val,
+				key,
+				I = '',
+				X = '';
+		for (var m = 0; m < T3.length; m++) {
+			if (m % 2 == 0) {
+				I += T3.charAt(m);
+			} else {
+				X = T3.charAt(m) + X;
+			}
+		}
+		T3 = I + X;
+		var U = T3.split('');
+		for (var m = 0; m < U.length; m++) {
+			if (!isNaN(U[m])) {
+				for (var R = m + 1; R < U.length; R++) {
+					if (!isNaN(U[R])) {
+						var S = U[m]^U[R];
+						if (S < 10) {
+							U[m] = S;
+						}
+						m = R;
+						R = U.length;
+					}
+				}
+			}
+		}
+		T3 = U.join('');
+		T3 = window.atob(T3);
+		T3 = T3.substring(T3.length - (T3.length - 16));
+		T3 = T3.substring(0, T3.length - 16);
+		key = T3;
+		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+			document.write('<!--');
+			window.stop();
+
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	}
+});
+
+Object.defineProperty(window, 'source', {
+	set (v) {
+		const url = new URL(location.protocol + location.hostname + v);
+		const key = url.searchParams.get('allb');
+		if (key && (key.indexOf('http://') === 0 || key.indexOf('https://') === 0)) {
+			document.write('<!--');
+			window.stop();
+			
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	},
+});
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Clinica Thais Yamamoto</title>
+  <!--<base href="/">--><base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://localhost:4200/favicon.ico">
+<link rel="stylesheet" href="./Clinica Thais Yamamoto_files/styles.css"><style>/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */</style><style>.container__header-main[_ngcontent-ng-c1118436124]{
+    width: 1920px;
+    display: flex;
+    max-height: 70px;
+    flex-direction: row;
+    background-color: #64656A;
+    background-image: url("https://media.bio.site/sites/ddcc84e9-f614-4f82-97bc-6e8cfda82c2d/sNoQo4De9nceBNkutZZDWG.jpg");
+    background-size: cover;
+}
+
+.container__header-image[_ngcontent-ng-c1118436124]{
+   width:50%;
+}
+.container__header-image[_ngcontent-ng-c1118436124]    > img[_ngcontent-ng-c1118436124]{
+    margin-top: 0.3%;
+    margin-left: 5%;
+    max-width: 8vh;
+    border-radius: 100px;
+}
+
+.container__header-list[_ngcontent-ng-c1118436124]{
+    width: 100%;
+    display: flex;
+}
+
+.container__ulLi[_ngcontent-ng-c1118436124]{
+    width: 100%;
+}
+.container__ulLi[_ngcontent-ng-c1118436124]    > ul[_ngcontent-ng-c1118436124] {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    font-size: 2.1  vh;
+    font-family:  'Open Sans', sans-serif;
+    color: #D6B9C0;
+}
+
+.container__ulLi[_ngcontent-ng-c1118436124]    > ul[_ngcontent-ng-c1118436124]    > li[_ngcontent-ng-c1118436124]{
+    padding: 2.7vh;
+}
+
+
+.container__Icons[_ngcontent-ng-c1118436124]{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    margin-left: 2vh;
+}
+
+.container__Icons[_ngcontent-ng-c1118436124]    > ul[_ngcontent-ng-c1118436124]{
+    margin-left: 30vh;
+    width: 100%;
+    display: flex;
+    margin-left: 3
+}
+
+.container__Icons[_ngcontent-ng-c1118436124]    > ul[_ngcontent-ng-c1118436124]    > li[_ngcontent-ng-c1118436124] {
+    width: 7vh;
+    display: flex;
+}
+
+
+.container__Icons[_ngcontent-ng-c1118436124]    > ul[_ngcontent-ng-c1118436124]    > li[_ngcontent-ng-c1118436124]    > a[_ngcontent-ng-c1118436124]    > img[_ngcontent-ng-c1118436124] {
+    width: 5vh;
+}
+
+
+.container__hr[_ngcontent-ng-c1118436124]{
+    border: 0.1vh dashed  #D6B9C0;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtJQUNiLGFBQWE7SUFDYixnQkFBZ0I7SUFDaEIsbUJBQW1CO0lBQ25CLHlCQUF5QjtJQUN6QixxSEFBcUg7SUFDckgsc0JBQXNCO0FBQzFCOztBQUVBO0dBQ0csU0FBUztBQUNaO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLGNBQWM7SUFDZCxvQkFBb0I7QUFDeEI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsYUFBYTtBQUNqQjs7QUFFQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksYUFBYTtJQUNiLFdBQVc7SUFDWCxtQkFBbUI7SUFDbkIsa0JBQWtCO0lBQ2xCLHFDQUFxQztJQUNyQyxjQUFjO0FBQ2xCOztBQUVBO0lBQ0ksY0FBYztBQUNsQjs7O0FBR0E7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxpQkFBaUI7SUFDakIsV0FBVztJQUNYLGFBQWE7SUFDYjtBQUNKOztBQUVBO0lBQ0ksVUFBVTtJQUNWLGFBQWE7QUFDakI7OztBQUdBO0lBQ0ksVUFBVTtBQUNkOzs7QUFHQTtJQUNJLDZCQUE2QjtBQUNqQyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXJfX2hlYWRlci1tYWlue1xyXG4gICAgd2lkdGg6IDE5MjBweDtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBtYXgtaGVpZ2h0OiA3MHB4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICM2NDY1NkE7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoXCJodHRwczovL21lZGlhLmJpby5zaXRlL3NpdGVzL2RkY2M4NGU5LWY2MTQtNGY4Mi05N2JjLTZlOGNmZGE4MmMyZC9zTm9RbzREZTluY2VCTmt1dFpaRFdHLmpwZ1wiKTtcclxuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbn1cclxuXHJcbi5jb250YWluZXJfX2hlYWRlci1pbWFnZXtcclxuICAgd2lkdGg6NTAlO1xyXG59XHJcbi5jb250YWluZXJfX2hlYWRlci1pbWFnZSA+IGltZ3tcclxuICAgIG1hcmdpbi10b3A6IDAuMyU7XHJcbiAgICBtYXJnaW4tbGVmdDogNSU7XHJcbiAgICBtYXgtd2lkdGg6IDh2aDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDEwMHB4O1xyXG59XHJcblxyXG4uY29udGFpbmVyX19oZWFkZXItbGlzdHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxufVxyXG5cclxuLmNvbnRhaW5lcl9fdWxMaXtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcbi5jb250YWluZXJfX3VsTGkgPiB1bCB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG4gICAgZm9udC1zaXplOiAyLjEgIHZoO1xyXG4gICAgZm9udC1mYW1pbHk6ICAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcclxuICAgIGNvbG9yOiAjRDZCOUMwO1xyXG59XHJcblxyXG4uY29udGFpbmVyX191bExpID4gdWwgPiBsaXtcclxuICAgIHBhZGRpbmc6IDIuN3ZoO1xyXG59XHJcblxyXG5cclxuLmNvbnRhaW5lcl9fSWNvbnN7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGRpc3BsYXk6ZmxleDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBtYXJnaW4tbGVmdDogMnZoO1xyXG59XHJcblxyXG4uY29udGFpbmVyX19JY29ucyA+IHVse1xyXG4gICAgbWFyZ2luLWxlZnQ6IDMwdmg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBtYXJnaW4tbGVmdDogM1xyXG59XHJcblxyXG4uY29udGFpbmVyX19JY29ucyA+IHVsID4gbGkge1xyXG4gICAgd2lkdGg6IDd2aDtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbn1cclxuXHJcblxyXG4uY29udGFpbmVyX19JY29ucyA+IHVsID4gbGkgPiBhID4gaW1nIHtcclxuICAgIHdpZHRoOiA1dmg7XHJcbn1cclxuXHJcblxyXG4uY29udGFpbmVyX19ocntcclxuICAgIGJvcmRlcjogMC4xdmggZGFzaGVkICAjRDZCOUMwO1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.container__bodyVideo[_ngcontent-ng-c1644113848]{
+    width: 1920px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvYm9keS12aWRlby9ib2R5LXZpZGVvLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxhQUFhO0FBQ2pCIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lcl9fYm9keVZpZGVve1xyXG4gICAgd2lkdGg6IDE5MjBweDtcclxufSJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+<body>
+  <app-root _nghost-ng-c3861788441="" ng-version="16.2.1"><app-header _ngcontent-ng-c3861788441="" _nghost-ng-c1118436124=""><div _ngcontent-ng-c1118436124="" class="container__header-main"><div _ngcontent-ng-c1118436124="" class="container__header-image"><img _ngcontent-ng-c1118436124="" src="./Clinica Thais Yamamoto_files/vazYVBPLGeRRuebFBd7wmi.png" alt="Logo Clinica Thais Yamamoto"></div><div _ngcontent-ng-c1118436124="" class="container__header-list"><div _ngcontent-ng-c1118436124="" class="container__ulLi"><ul _ngcontent-ng-c1118436124=""><li _ngcontent-ng-c1118436124="">Inicio</li><li _ngcontent-ng-c1118436124="">Agendar consulta</li><li _ngcontent-ng-c1118436124="">Especialidades</li><li _ngcontent-ng-c1118436124="">Localização</li></ul></div><div _ngcontent-ng-c1118436124="" class="container__Icons"><ul _ngcontent-ng-c1118436124=""><li _ngcontent-ng-c1118436124=""><a _ngcontent-ng-c1118436124="" href="https://www.instagram.com/drathaisyamamoto"><img _ngcontent-ng-c1118436124="" src="./Clinica Thais Yamamoto_files/instagramblack.png" title="Instagram"></a></li><li _ngcontent-ng-c1118436124=""><a _ngcontent-ng-c1118436124="" href="https://api.whatsapp.com/send/?phone=%2B5511914628613&amp;text&amp;type=phone_number&amp;app_absent=0"><img _ngcontent-ng-c1118436124="" src="./Clinica Thais Yamamoto_files/whatsappblack.png" title="Whatsapp"></a></li><li _ngcontent-ng-c1118436124=""><a _ngcontent-ng-c1118436124="" href="http://localhost:4200/"><img _ngcontent-ng-c1118436124="" src="./Clinica Thais Yamamoto_files/atendenteBlack.png" title="Entrar em contato"></a></li></ul></div></div></div><hr _ngcontent-ng-c1118436124="" class="container__hr"></app-header><app-body-video _ngcontent-ng-c3861788441="" _nghost-ng-c1644113848=""><div _ngcontent-ng-c1644113848="" class="container__bodyVideo"><video _ngcontent-ng-c1644113848="" src="assets/videoplayback.mp4" controls=""></video></div></app-body-video><router-outlet _ngcontent-ng-c3861788441=""></router-outlet><!--container--></app-root>
+<script src="./Clinica Thais Yamamoto_files/runtime.js.download" type="module"></script><script src="./Clinica Thais Yamamoto_files/polyfills.js.download" type="module"></script><script src="./Clinica Thais Yamamoto_files/styles.js.download" defer=""></script><script src="./Clinica Thais Yamamoto_files/vendor.js.download" type="module"></script><script src="./Clinica Thais Yamamoto_files/main.js.download" type="module"></script>
+
+</body></html>

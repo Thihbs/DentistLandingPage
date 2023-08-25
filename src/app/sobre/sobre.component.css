@@ -1,0 +1,38 @@
+.sobre-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    margin-bottom: 30vh;
+}
+.sobre-text {
+    width: 100%;
+}
+
+.sobre-text > h1{
+    margin-left: 15vh;
+    color: #626265;
+    margin-bottom: 10vh;
+    font-size: 6.9vh;
+}
+
+.sobre-text > p{
+    margin-left: 15vh;
+    margin-top: 3vh;
+    font-size: 1.9vh;
+    
+}
+.sobre-img {
+    flex: 1;
+    text-align: end;
+    margin-right: 5vh;
+}
+img {
+    width: 68vh;
+    max-width: 100%;
+    height: auto;
+    border-radius:100px;
+    margin-right: 10vh;
+}

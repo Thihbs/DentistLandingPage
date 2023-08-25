@@ -1,0 +1,32 @@
+<div class="map">
+  <div class="container__h1">
+    <img src="assets/vazYVBPLGeRRuebFBd7wmi.png">
+    <h1>Para todas as áreas da odontologia, o seu dentista de qualidade, com atendimento humanizado e condições especiais pra vida toda!</h1>
+    <app-button-component></app-button-component>
+  </div>
+  <div class="container__loc">
+    <h1>Localização do consultorio</h1>
+  </div>
+<div class="cont_map">
+<google-map
+  width="500px" height="350px"
+  [zoom]="zoom"
+  [center]="center"
+  [options]="options"
+  (mapClick)="mapClick($event)"
+>
+  <map-marker
+    #markerElem="mapMarker"
+    *ngFor="let marker of markers"
+    [position]="marker.position"
+    [label]="marker.label"
+    [title]="marker.title"
+    [options]="marker.options"
+    (mapClick)="openInfo(markerElem, marker.info)"
+  ></map-marker>
+  <map-info-window>
+    <div [innerHTML]="infoContent"></div>
+  </map-info-window>
+</google-map>
+</div>
+</div>

@@ -1,0 +1,113 @@
+
+.container__header-main{
+    width: 100;
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    background-size: cover;
+}
+
+.container__header-image {
+   width:60%;
+}
+.container__header-image > img{
+    margin-top: 0.8%;
+    margin-left: 35%;
+    width: 7vh;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.container__header-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.container__ulLi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container__ulLi > ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    font-family:  'Open Sans', sans-serif;
+    color: black;   
+    text-align: start; 
+}
+.container__ulLi > ul > li{
+    padding: 2.7vh;
+}
+
+.container__Icons{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    margin-left: 2vh;
+}
+
+.container__Icons > ul{
+    width: 100%;
+    margin-left: 30vh;
+    display: flex;
+    margin-left: 3
+}
+
+.container__Icons > ul > li {
+    width: 3vh;
+    display: flex;
+}
+
+
+.container__Icons > ul > li > a > img {
+    width: 4vh;
+}
+
+.container__Icons > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container__Icons > ul li {
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.container__Icons > ul li a {
+    text-decoration: none;
+}
+.container__Icons > ul li a .fa-brands {
+    font-size: 3em;
+    color: #222;
+}
+.container__Icons > ul li a::before {
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3em;
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+}
+
+.container__Icons > ul li:nth-child(1) a::before {
+    content: "\f16d";
+    background-image: linear-gradient(45deg, 
+      #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,
+      #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container__Icons > ul li:nth-child(2) a::before {
+    content: "\f232";
+    color: #25D366;
+
+}
+.container__Icons > ul li:hover a::before {
+    height: 100%;
+}

@@ -1,0 +1,29 @@
+.container_mainBody{
+    width: 100%; 
+    min-height: 100vh; 
+}
+
+.container__especialidades-main {
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.container__especialidades-main > h2 {
+  color: #626265;
+  font-size: 2vh;
+}
+
+.container__especialidades-main > h1 {
+    color:#626265;
+    margin-top: 0.3em;
+    font-size: 8vh;
+  }
+
+.container__HqEspecialidades{
+    margin-top: 10vh;
+    border: 0.1vh solid #626265;
+}

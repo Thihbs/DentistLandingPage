@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+    
+}
+a {
+    color: #000;
+ }
+ /* link que foi visitado */
+ a:visited {
+     color: #555;
+ }
+ /* quando o ponteiro do mouse passa no link */
+ a:hover {
+     color: #999;
+ }
+ /* quando o link for selecionado */
+ a:active {
+     color: #333;
+ }
