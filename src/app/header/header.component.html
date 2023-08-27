@@ -2,6 +2,9 @@
     <div class="container__header-image">
       <img src="assets/vazYVBPLGeRRuebFBd7wmi.png" alt="Logo Clinica Thais Yamamoto">
     </div>
+    <div class="sidebar-icon" (click)="toggleMenu()">
+      <i class="fa-solid fa-bars"></i> <!-- Exemplo de ícone de barra lateral usando FontAwesome -->
+    </div>
     <div class="container__header-list">
       <div class="container__ulLi">
       <ul>
@@ -20,3 +23,13 @@
     </div>
     </div>
   </div>
+
+  <div class="container__header-list-mobile" id="header-mobile" *ngIf="headerService.menuOpen$ | async">
+   <div class="container__ulLi-mobile">
+    <ul> 
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#agendar">Agendar</a></li>
+      <li><a href="#especialidades">Especialidades</a></li>
+      <li><a href="#localizacao">Localização</a></li>
+    </ul>
+</div>

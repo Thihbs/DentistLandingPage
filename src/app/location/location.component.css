@@ -35,3 +35,50 @@
     margin-bottom: 20vh;
     margin-right: 15vh;
 }
+
+@media screen and (max-width: 320px) ,(max-width: 420px) {
+    .map{
+        min-width: 420px;
+        width: 100%;
+        height: 50em;
+        background-color: #618EB8;
+        display: grid;
+        margin-top: -20vh;
+        grid-template-areas:
+            "h1"
+            "h2"
+            "h3";
+        text-align: start;
+        color: black;
+        justify-items: center;
+        justify-content: center;
+    }
+    .container__h1{
+        color: white;
+        width: 22rem;
+        font-size: 1.0vh;
+        grid-area: h1;
+        margin-left: 3rem;
+    }
+    
+    .container__h1 > img{
+        margin-top: 3rem;
+        width: 32vh;
+        border-radius: 100%;
+    }
+    .container__loc{
+        margin-left: 5rem;
+        font-size: 0.6rem;
+        margin-right: 15vh;
+        color: white;
+        margin-top: 15vh;
+        grid-area: h2;
+    }
+    
+    .cont_map{
+        width: 20rem;
+        grid-area: h3;
+        margin-bottom: 20vh;
+        margin-right: 15vh;
+    }
+}

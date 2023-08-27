@@ -4,7 +4,7 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ModalService {
-  showModal$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+export class HeaderService {
+  menuOpen$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   constructor() { }
 }

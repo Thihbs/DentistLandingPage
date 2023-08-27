@@ -27,3 +27,16 @@
     margin-top: 10vh;
     border: 0.1vh solid #626265;
 }
+
+@media screen and (max-width: 320px), (max-width: 420px) {
+  .container__especialidades-main > h1{
+    font-size: 5vh;
+  }
+  .container__especialidades-main{
+    margin-top: 10vh;
+    width: 23rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}

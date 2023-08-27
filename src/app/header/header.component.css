@@ -1,11 +1,9 @@
-
 .container__header-main{
-    width: 100;
     min-height: 100%;
     display: flex;
-    flex-direction: row;
     background-color: white;
     background-size: cover;
+    justify-content: space-around;
 }
 
 .container__header-image {
@@ -110,4 +108,151 @@
 }
 .container__Icons > ul li:hover a::before {
     height: 100%;
+}
+
+.sidebar-icon{
+    display:none;
+}
+.container__ulLi-mobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container__ulLi-mobile > ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    font-family:  'Open Sans', sans-serif;
+    color: black;   
+    text-align: start; 
+}
+.container__ulLi-mobile > ul > li{
+    padding: 2.7vh;
+}
+
+/* Estilos para telas pequenas (mobile) */
+@media (max-width: 768px) {
+    .container__Icons {
+      display: none; /* Esconde os ícones de mídia social */
+    }
+    .container__header-main{
+      justify-content:  space-evenly;
+    }
+    .container__header-main i{
+        display:flex;
+        margin-right: 7.7vh;
+    }
+    .container__header-image img{
+        margin-left: 5vh;
+    }
+    .container__header-list{
+        display:none;
+    }
+    /* Estilos para a barra lateral */
+    .sidebar-icon {
+      display: flex; /* Mostra o ícone da barra lateral */
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+      cursor: pointer;
+    } 
+.container__header-list-mobile{
+    position: relative;
+    width: 100vh;
+    display: flex;
+    justify-content: flex-end;
+}    
+.container__ulLi-mobile{
+    position: absolute;
+    top: 100%;
+    background-color: transparent;
+    padding: 10px;
+    color: black;
+    z-index: 1;
+    justify-content: flex-end;
+    transition: max-height 0.3s ease;
+}
+.container__ulLi-mobile ul {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-align: start;
+    align-items: center;
+    margin-right: 18vh;
+}
+.container__ulLi-mobile ul a {
+    color: white;
+}
+}
+
+@media screen and (max-width: 320px),(max-width: 420px) {
+.container__Icons {
+        display: none; /* Esconde os ícones de mídia social */
+      }
+.container__header-image{
+    width: 40%;
+    height: 
+}      
+
+.container__header-image img{
+margin-top: 8.8%;
+margin-bottom: 8.8%;
+margin-left: 15%;
+width: 6vh;
+object-fit: cover;
+border-radius: 100px;
+}  
+
+.container__header-main{
+    min-height: 100%;
+    display: flex;
+    background-color: white;
+    background-size: cover;
+    flex-direction: row-reverse;
+      }
+      .container__header-list{  
+          display: none;
+      }
+      /* Estilos para a barra lateral */
+.sidebar-icon {
+        display: flex; /* Mostra o ícone da barra lateral */
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+        cursor: pointer;
+      } 
+.container__header-list-mobile{
+    margin-right: 30vh;
+    position: relative;
+    width: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  }    
+.container__ulLi-mobile{
+      position: absolute;
+      top: 100%;
+      background-color: transparent;
+      padding: 10px;
+      color: black;
+      z-index: 1;
+      justify-content: flex-end;
+      transition: max-height 0.3s ease;
+  }
+.container__ulLi-mobile ul {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Open Sans', sans-serif;
+      color: black;
+      text-align: start;
+      align-items: flex-start;
+  }
+.container__ulLi-mobile ul a {
+      color: white;
+      margin-right: 10vh;
+  } 
 }

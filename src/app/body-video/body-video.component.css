@@ -40,3 +40,50 @@
     font-size: 0.8em;
     color: white;
 }
+
+
+@media (max-width: 768px) {
+    .container__ImgBodyVideo{
+      display: block;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .container__ImgBodyVideo button{
+        margin-left: 5vh;
+    }
+}
+
+
+@media (max-width: 320px), (max-width: 420px){
+    .container__ImgBodyVideo{
+      display: block;
+      margin-top: 20vh;
+      margin-left: 40px;
+      margin-right: 10px;
+    }
+
+    .container__ImgBodyVideo button{
+        margin-left: 1vh;
+    }
+    .container__ImgBodyVideo > h1{
+        font-size: 0.6em;
+        color: white;
+        margin-left: 10px;
+}.container__ImgBodyVideo > h2{
+    width: 88%;
+    margin-left: 10px;
+    font-size: 0.8em;
+    color: white;
+}
+.container__ImgBodyVideo > p{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 80%;
+    font-size: 0.8em;
+    color: white;
+}
+.container__bodyVideo video{
+    min-width: 370px;
+}
+}
