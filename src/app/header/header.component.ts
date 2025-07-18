@@ -14,10 +14,6 @@ export class HeaderComponent {
   }
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
-    this.headerService.menuOpen$.next(true);
-    console.log(this.menuOpen)
-    if(this.menuOpen === false) {
-      this.headerService.menuOpen$.next(false);
-    }
-}
+    this.headerService.menuOpen$.next(this.menuOpen);
+  }
 }

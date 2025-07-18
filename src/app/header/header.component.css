@@ -1,9 +1,10 @@
 .container__header-main{
     min-height: 100%;
     display: flex;
-    background-color: white;
+    background-color: var(--secondary-color);
     background-size: cover;
     justify-content: space-around;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .container__header-image {
