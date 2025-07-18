@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #2da4c7;
+  --secondary-color: #e8f6fb;
+  --text-color: #333;
+  --font-family: 'Poppins', sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,9 +13,10 @@
     list-style-type: none;
     text-decoration: none;
     color: inherit;
+    font-family: var(--font-family);
 }
 a {
-    color: #000;
+    color: var(--text-color);
  }
  /* link que foi visitado */
  a:visited {

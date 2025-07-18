@@ -1,7 +1,7 @@
 <div class="container__card-especialidades">
    <div class="container__card-box">
          <div class="card" *ngFor="let cardValues of card">
-            <img src={{cardValues.urlimg}} alt="Card Image">
+            <img src={{cardValues.urlimg}} [alt]="cardValues.name">
             <h2>{{cardValues.name}}</h2>
             <p>{{cardValues.description}}</p>
             <button class="btn">Agendar</button>
