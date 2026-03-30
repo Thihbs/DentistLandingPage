@@ -1,42 +1,22 @@
-.container_mainBody{
-    width: 100%; 
-    min-height: 100vh; 
+.especialidades {
+  padding: 90px 6vw 10px;
 }
 
-.container__especialidades-main {
-    margin-top: 10vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.especialidades__eyebrow {
+  color: #63a4c9;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14rem;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-
-.container__especialidades-main > h2 {
-  color: #626265;
-  font-size: 2vh;
-}
-
-.container__especialidades-main > h1 {
-    color:#626265;
-    margin-top: 0.3em;
-    font-size: 8vh;
-  }
-
-.container__HqEspecialidades{
-    margin-top: 10vh;
-    border: 0.1vh solid #626265;
-}
-
-@media screen and (max-width: 320px), (max-width: 420px) {
-  .container__especialidades-main > h1{
-    font-size: 5vh;
-  }
-  .container__especialidades-main{
-    margin-top: 10vh;
-    width: 23rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
+.especialidades h2 {
+  text-align: center;
+  color: #1f2a37;
+  font-size: clamp(1.7rem, 3.2vw, 2.6rem);
+  max-width: 780px;
+  margin: 0 auto;
+  line-height: 1.25;
 }

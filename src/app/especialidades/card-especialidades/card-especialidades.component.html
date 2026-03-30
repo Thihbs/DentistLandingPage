@@ -1,11 +1,8 @@
-<div class="container__card-especialidades">
-   <div class="container__card-box">
-         <div class="card" *ngFor="let cardValues of card">
-            <img src={{cardValues.urlimg}} alt="Card Image">
-            <h2>{{cardValues.name}}</h2>
-            <p>{{cardValues.description}}</p>
-            <button class="btn">Agendar</button>
-         </div>
-      </div>
+<div class="cards-grid">
+  <article class="card" *ngFor="let cardValues of card">
+    <img [src]="cardValues.urlimg" [alt]="cardValues.name">
+    <h3>{{ cardValues.name }}</h3>
+    <p>{{ cardValues.description }}</p>
+    <a class="card__action" href="#agendar">Agendar consulta</a>
+  </article>
 </div>
-
