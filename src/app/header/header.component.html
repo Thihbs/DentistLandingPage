@@ -1,35 +1,39 @@
-<div class="container__header-main">
-    <div class="container__header-image">
-      <img src="assets/vazYVBPLGeRRuebFBd7wmi.png" alt="Logo Clinica Thais Yamamoto">
-    </div>
-    <div class="sidebar-icon" (click)="toggleMenu()">
-      <i class="fa-solid fa-bars"></i> <!-- Exemplo de ícone de barra lateral usando FontAwesome -->
-    </div>
-    <div class="container__header-list">
-      <div class="container__ulLi">
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#agendar">Agendar</a></li>
-        <li><a href="#especialidades">Especialidades</a></li>
-        <li><a href="#localizacao">Localização</a></li>
-      </ul>
-      </div>
-      <div class="container__Icons">
-        <ul>
-          <li><a href="https://www.instagram.com/drathaisyamamoto"><i class="fa-brands fa-instagram instagram"></i></a></li>
-          <li><a href="https://api.whatsapp.com/send/?phone=%2B5511914628613&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp whatsapp"></i></a></li>
-          <li><a href="#"><img src="assets/atendenteBlack.png" title="Atendimento ao cliente"></a></li>
-      </ul>
-    </div>
+<header class="header">
+  <div class="header__brand">
+    <img src="assets/vazYVBPLGeRRuebFBd7wmi.png" alt="Logo Clínica Thais Yamamoto">
+    <div>
+      <strong>Clínica Thais Yamamoto</strong>
+      <p>Odontologia Estética e Preventiva</p>
     </div>
   </div>
 
-  <div class="container__header-list-mobile" id="header-mobile" *ngIf="headerService.menuOpen$ | async">
-   <div class="container__ulLi-mobile">
-    <ul> 
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#agendar">Agendar</a></li>
-      <li><a href="#especialidades">Especialidades</a></li>
-      <li><a href="#localizacao">Localização</a></li>
-    </ul>
-</div>
+  <button class="header__menu-button" (click)="toggleMenu()" aria-label="Abrir menu">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <nav class="header__nav">
+    <a href="#sobre">Sobre</a>
+    <a href="#agendar">Agendar</a>
+    <a href="#especialidades">Especialidades</a>
+    <a href="#localizacao">Localização</a>
+  </nav>
+
+  <div class="header__social">
+    <a href="https://www.instagram.com/drathaisyamamoto" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://api.whatsapp.com/send/?phone=%2B5511914628613&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="#agendar" aria-label="Atendimento">
+      <img src="assets/atendenteBlack.png" title="Atendimento ao cliente" alt="Ícone atendimento">
+    </a>
+  </div>
+</header>
+
+<nav class="header__mobile" *ngIf="headerService.menuOpen$ | async">
+  <a href="#sobre">Sobre</a>
+  <a href="#agendar">Agendar</a>
+  <a href="#especialidades">Especialidades</a>
+  <a href="#localizacao">Localização</a>
+</nav>

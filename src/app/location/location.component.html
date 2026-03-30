@@ -1,32 +1,35 @@
-<div class="map">
-  <div class="container__h1">
-    <img src="assets/vazYVBPLGeRRuebFBd7wmi.png">
-    <h1>Para todas as áreas da odontologia, o seu dentista de qualidade, com atendimento humanizado e condições especiais pra vida toda!</h1>
+<section class="location-wrap" id="localizacao">
+  <div class="location__content">
+    <img src="assets/vazYVBPLGeRRuebFBd7wmi.png" alt="Logo da clínica">
+    <p class="location__eyebrow">Visite nossa clínica</p>
+    <h2>Estrutura completa para atender você com conforto e precisão.</h2>
+    <p>
+      Estamos na Granja Viana com fácil acesso, ambiente acolhedor e atendimento próximo para você e sua família.
+    </p>
     <app-button-component></app-button-component>
   </div>
-  <div class="container__loc">
-    <h1 id='localizacao'>Localização do consultorio</h1>
+
+  <div class="location__map">
+    <google-map
+      width="100%"
+      height="420px"
+      [zoom]="zoom"
+      [center]="center"
+      [options]="options"
+      (mapClick)="mapClick($event)"
+    >
+      <map-marker
+        #markerElem="mapMarker"
+        *ngFor="let marker of markers"
+        [position]="marker.position"
+        [label]="marker.label"
+        [title]="marker.title"
+        [options]="marker.options"
+        (mapClick)="openInfo(markerElem, marker.info)"
+      ></map-marker>
+      <map-info-window>
+        <div [innerHTML]="infoContent"></div>
+      </map-info-window>
+    </google-map>
   </div>
-<div class="cont_map">
-<google-map
-  width="500px" height="350px"
-  [zoom]="zoom"
-  [center]="center"
-  [options]="options"
-  (mapClick)="mapClick($event)"
->
-  <map-marker
-    #markerElem="mapMarker"
-    *ngFor="let marker of markers"
-    [position]="marker.position"
-    [label]="marker.label"
-    [title]="marker.title"
-    [options]="marker.options"
-    (mapClick)="openInfo(markerElem, marker.info)"
-  ></map-marker>
-  <map-info-window>
-    <div [innerHTML]="infoContent"></div>
-  </map-info-window>
-</google-map>
-</div>
-</div>
+</section>

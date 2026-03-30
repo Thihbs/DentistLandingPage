@@ -1,75 +1,51 @@
 .sobre-section {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    align-items: center;
-    justify-content: center;
-    text-align: start;
-    margin-bottom: 30vh;
-}
-.sobre-text {
-    width: 100%;
-}
-
-.sobre-text > h1{
-    margin-left: 15vh;
-    color: #626265;
-    margin-bottom: 10vh;
-    font-size: 6.9vh;
+  margin: 90px 6vw;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(19, 42, 64, 0.1);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 28px;
+  align-items: center;
 }
 
-.sobre-text > p{
-    margin-left: 15vh;
-    margin-top: 3vh;
-    font-size: 1.9vh;
-    
-}
-.sobre-img {
-    flex: 1;
-    text-align: end;
-    margin-right: 5vh;
-}
-img {
-    width: 68vh;
-    max-width: 100%;
-    height: auto;
-    border-radius:100px;
-    margin-right: 10vh;
+.sobre-text__eyebrow {
+  color: #63a4c9;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 320px),(max-width: 420px)  {
-    .sobre-text > h1 {
-        font-size: 1.0rem;
-        margin-left: 1rem;
-        margin-bottom: 0.5rem;
-    }
-    .sobre-text > p {
-        margin-left: 3rem;
-        margin-top: 3vh;
-        font-size: 0.6rem;
-    }
-    .sobre-section {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-content: center;
-        text-align: start;
-        margin-bottom: 30vh;
-    }
+.sobre-text h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: #1f2a37;
+  margin-bottom: 16px;
+}
 
-.sobre-img > img {
-    margin-top: 3rem;
-    width: 30rem;
-    margin-left: 2rem;
-    height: auto;
-    max-width: 100%;
-    border-radius: 100px;
-    margin-right: 10vh;
-    }
-.container__hr {
-    margin-left: 2rem;
-    margin-top: 30vh;
-    margin-bottom: 20vh;max-width: 100%;
-}   
+.sobre-text p {
+  color: #526375;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.sobre-img img {
+  width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+  min-height: 360px;
+}
+
+@media (max-width: 900px) {
+  .sobre-section {
+    grid-template-columns: 1fr;
+    padding: 26px;
+    margin: 70px 5vw;
+  }
+
+  .sobre-img img {
+    min-height: 280px;
+  }
 }
