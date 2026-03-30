@@ -1,5 +1,16 @@
 import { Component } from '@angular/core';
 
+interface Specialty {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+interface Testimonial {
+  name: string;
+  text: string;
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,29 +19,47 @@ import { Component } from '@angular/core';
 export class AppComponent {
   readonly clinicName = 'Clínica Thais Yamamoto';
 
-  readonly specialties = [
+  readonly specialties: Specialty[] = [
     {
-      title: 'Ortodontia',
-      description: 'Alinhadores e aparelhos modernos para um sorriso harmônico em todas as idades.'
-    },
-    {
-      title: 'Implantodontia',
-      description: 'Reabilitação oral com planejamento digital e foco em conforto durante o tratamento.'
-    },
-    {
+      icon: 'fa-tooth',
       title: 'Odontologia Estética',
-      description: 'Lentes, clareamento e restaurações para valorizar seu sorriso com naturalidade.'
+      description: 'Clareamento, resinas e harmonização do sorriso com resultado natural.'
     },
     {
-      title: 'Prevenção e Profilaxia',
-      description: 'Consultas periódicas para manter saúde bucal, prevenir dores e evitar urgências.'
+      icon: 'fa-teeth-open',
+      title: 'Ortodontia',
+      description: 'Alinhadores e aparelhos com planejamento individual e acompanhamento próximo.'
+    },
+    {
+      icon: 'fa-screwdriver-wrench',
+      title: 'Implantes Dentários',
+      description: 'Reabilitação oral com técnica moderna, segurança e foco no conforto.'
+    },
+    {
+      icon: 'fa-shield-heart',
+      title: 'Prevenção Completa',
+      description: 'Consultas preventivas para manter saúde bucal e evitar tratamentos emergenciais.'
     }
   ];
 
-  readonly highlights = [
-    'Atendimento humanizado e sem pressa',
-    'Planejamento personalizado para cada paciente',
-    'Ambiente confortável e acolhedor',
-    'Fácil acesso e suporte via WhatsApp'
+  readonly testimonials: Testimonial[] = [
+    {
+      name: 'Mariana R.',
+      text: 'Atendimento impecável. Me senti segura desde a primeira consulta e amei o resultado.'
+    },
+    {
+      name: 'Carlos M.',
+      text: 'Equipe muito atenciosa e ambiente excelente. Processo claro e sem surpresas.'
+    },
+    {
+      name: 'Fernanda S.',
+      text: 'Consegui agendar rápido pelo WhatsApp e fui super bem atendida na clínica.'
+    }
+  ];
+
+  readonly steps = [
+    'Envie uma mensagem no WhatsApp',
+    'Receba orientação e horário disponível',
+    'Faça sua avaliação com plano personalizado'
   ];
 }
