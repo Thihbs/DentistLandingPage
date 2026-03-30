@@ -1,35 +1,55 @@
 <div class="modal" *ngIf="modalService.showModal$ | async">
   <div class="modal-content">
-    <h1>Agende uma avaliação</h1>
-    <form (ngSubmit)="submitForm()">
-      <div class="input-group">
-        <div class="input-box">
-      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" [(ngModel)]="nome" required>
+    <button class="close-button" type="button" (click)="close()" aria-label="Fechar modal">×</button>
+
+    <div class="modal-header">
+      <p class="badge">Avaliação personalizada</p>
+      <h1>Agende seu horário</h1>
+      <p class="subtitle">Preencha os dados abaixo e vamos abrir seu aplicativo de e-mail com a solicitação pronta para envio.</p>
+    </div>
+
+    <form (ngSubmit)="submitForm()" #agendamentoForm="ngForm">
+      <div class="input-grid">
+        <label class="input-box" for="nome">
+          <span>Nome completo</span>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" [(ngModel)]="nome" required>
+        </label>
+
+        <label class="input-box" for="email">
+          <span>E-mail</span>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" [(ngModel)]="email" required>
+        </label>
       </div>
-      <div class="input-box">
-      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" [(ngModel)]="email" required>
-    </div>
-    <div class="input-box">
-      <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone (xx) xxxx-xxxx" [(ngModel)]="telefone" required>
-    </div>
-  </div>
-  <div class="form-group">
-    <textarea id="descricao" name="descricao" placeholder="Qual especialidade deseja agendar?" [(ngModel)]="descricao" rows="4"></textarea>
-  </div>
-  <div class="form-groups">
-    <label for="data">Escolha uma data:</label>
-    <input type="date" id="data" name="data" [(ngModel)]="data" required>
-  </div>
-  <div class="form-groups">
-    <label for="termos">
-      <input type="checkbox" id="termos" name="termos" [(ngModel)]="aceitoTermos" required>
-      Aceito os <a href="#" target="_blank">termos de serviço</a>
-    </label>
-  </div>
-  <div class="form-buttom">
-  <button type="submit">Enviar</button>
-  </div>
+
+      <div class="input-grid">
+        <label class="input-box" for="telefone">
+          <span>Telefone</span>
+          <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" [(ngModel)]="telefone" required>
+        </label>
+
+        <label class="input-box" for="data">
+          <span>Data desejada</span>
+          <input type="date" id="data" name="data" [(ngModel)]="data" required>
+        </label>
+      </div>
+
+      <label class="input-box" for="descricao">
+        <span>Especialidade desejada</span>
+        <textarea
+          id="descricao"
+          name="descricao"
+          placeholder="Ex.: ortodontia, clareamento, limpeza..."
+          [(ngModel)]="descricao"
+          rows="4"
+        ></textarea>
+      </label>
+
+      <label class="terms" for="termos">
+        <input type="checkbox" id="termos" name="termos" [(ngModel)]="aceitoTermos" required>
+        <span>Aceito os <a href="#" target="_blank">termos de serviço</a>.</span>
+      </label>
+
+      <button type="submit" class="submit-button" [disabled]="agendamentoForm.invalid">Enviar agendamento por e-mail</button>
     </form>
-    <button class="close-button" type="button" (click)="close()">x</button>
   </div>
 </div>
